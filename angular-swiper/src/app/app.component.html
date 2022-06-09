@@ -1,5 +1,8 @@
-<swiper>
-  <ng-template></ng-template>
+<swiper [config]="config">
+  <ng-template swiperSlide *ngFor="let image of images">
+    <img data-src="{{ image }}" alt="unsplash image" style="width:100%" class="swiper-lazy">
+    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+  </ng-template>
 </swiper>
 
 <router-outlet></router-outlet>
