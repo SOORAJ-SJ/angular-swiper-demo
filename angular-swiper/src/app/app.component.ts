@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import SwiperCore ,{ SwiperOptions} from 'swiper';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-swiper';
+  config: SwiperOptions = {
+    lazy: true
+  }
 }
