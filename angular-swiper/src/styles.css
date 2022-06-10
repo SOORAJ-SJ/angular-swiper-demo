@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.swiper {
+    height: 25em;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

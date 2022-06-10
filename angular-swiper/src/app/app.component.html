@@ -1,8 +1,32 @@
 <swiper [config]="config">
-  <ng-template swiperSlide *ngFor="let image of images">
-    <img data-src="{{ image }}" alt="unsplash image" style="width:100%" class="swiper-lazy">
-    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+  <ng-template swiperSlide>
+    <img data-src="https://source.unsplash.com/random/300×300?fruit" class="swiper-lazy">
+    <div class="swiper-lazy-preloader"></div>
   </ng-template>
+  <ng-template swiperSlide>
+    <img data-src="https://source.unsplash.com/random/300×300?city" class="swiper-lazy">
+    <div class="swiper-lazy-preloader"></div>
+  </ng-template>
+  <ng-template swiperSlide>
+    <img data-src="https://source.unsplash.com/random/300×300?car" class="swiper-lazy">
+    <div class="swiper-lazy-preloader"></div>
+  </ng-template>
+  <ng-template swiperSlide>
+    <img data-src="https://source.unsplash.com/random/300×300?motorcycle" class="swiper-lazy">
+    <div class="swiper-lazy-preloader"></div>
+  </ng-template>
+  <ng-template swiperSlide>
+    <img data-src="https://source.unsplash.com/random/300×300?nature" class="swiper-lazy">
+    <div class="swiper-lazy-preloader"></div>
+  </ng-template>
+  <ng-template swiperSlide>
+    <img data-src="https://source.unsplash.com/random/300×300?night" class="swiper-lazy">
+    <div class="swiper-lazy-preloader"></div>
+  </ng-template>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-el-next"></div>
+  <div class="swiper-el-prev"></div>
 </swiper>
+
 
 <router-outlet></router-outlet>
